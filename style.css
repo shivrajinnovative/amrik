@@ -14,6 +14,7 @@
 }
 body{
     font-family: 'Product Sans';
+    letter-spacing: 1px;
 }
 .text-primary{
     color: var(--primary-dark-color) !important;
@@ -30,6 +31,7 @@ body{
     color: white;
     padding: 8px 22px;
     position: relative;
+    transition: all .3s;
 }
 .theme-btn::after{
     content: '';
@@ -41,6 +43,13 @@ body{
     right: -5px;
     bottom: -5px;
     z-index: -1;
+}
+.theme-btn:hover{
+    background-color: var(--primary-color);
+}
+.theme-btn:hover::after{
+    background-color: black;
+
 }
 .heading{
     font-size: 40px;
@@ -67,14 +76,24 @@ body{
 .heading::after{
     right: -20px;
 }
+.hoverUp{
+    transition: all .3s;
+}
+.hoverUp:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 10px -5px rgba(20, 20, 20, 0.71);
+}
 @media (max-width:500px){
     .heading{
         font-size: 28px;
         margin: 20px 0;
     }
-.heading::before,.heading::after{
-    height: 54px;
-}
+    .heading::before,.heading::after{
+        height: 54px;
+    }
+    .border-end{
+        border-right: none !important;
+    }
 }
 
 
@@ -111,6 +130,7 @@ body{
     flex-basis: auto;
     width: 100%;
     transition:all 0.3s;
+    letter-spacing: 0;
 }
 .navbar .navbar-nav{
     width: 100%;
@@ -188,7 +208,7 @@ body{
     position: relative;
     top: -150px;
     left: 150px;
-    width: 400px;
+    width: 450px;
 }
 .abouImg img{
     width:100%
@@ -218,33 +238,63 @@ body{
 
 
 
-.owl-carousel img{
+
+.custom-prev,.custom-next{
+    position: absolute;
+    top: 50%;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 50%;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.services .custom-prev,.services .custom-next{
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    background-color:white;
+    box-shadow: 0 0 10px -5px rgb(36, 36, 36);
+}
+.services .custom-prev{
+    left: -15px;
+}
+.services .custom-next{
+    right: -15px;
+}
+
+
+.project p{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+section.gallery{
+    background: linear-gradient(var(--dark-color) 60%,white 40%);
+}
+
+
+.clients .owl-carousel img{
     height: 120px;
     width: 90%;
     object-fit:contain
 }
-
-.owl-item div {
-    border:0.3px dashed rgba(96, 96, 96, 0.479)
-}
-.custom-prev,.custom-next{
-    position: absolute;
-    top: 50%;
-    background-color: rgb(225, 225, 225);
-    height: 30px;
-    width: 30px;
-    font-size: 18px;
-    line-height: 30px;
-    text-align: center;
-    border-radius: 50%;
-}
-.custom-prev{
+.clients .custom-prev{
     left: -15px;
 }
-.custom-next{
+.clients .custom-next{
     right: -15px;
 }
-
+.clients .owl-item div {
+    border:0.3px dashed rgba(96, 96, 96, 0.479)
+}
+.clients .custom-prev,.clients .custom-next{
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    background-color: rgb(225, 225, 225);
+    
+}
 
 
 
