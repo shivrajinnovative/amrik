@@ -19,10 +19,10 @@
 
 <body>
 
-    <nav class="navbar shadow-sm navbar-expand-lg navbar-light bg-white fixed-top">
-        <div class="container align-items-center">
-            <a class="navbar-brand" href="#">
-                <img src="assets/logo.png" alt="">
+    <nav class="navbar shadow-sm pt-md-2 navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container-xxl align-items-center">
+            <a class="navbar-brand p-0" href="#">
+                <img src="assets/logo.png"class="logo" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -32,9 +32,9 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <div class="top-info-section d-flex flex-wrap justify-content-between px-md-4">
                     <div class="d-flex flex-wrap">
-                        <p>Call Us: <span class="fw-bold">+91 9833904080</span></p>
+                        <p>Call Us: <b>+91 9833904080</b></p>
                         <p class="ms-md-5">Or email <a href=""
-                                class="text-black text-decoration-none fw-bold ">asplcranes@gmail.com</a></p>
+                                class="text-black text-decoration-none "><b>asplcranes@gmail.com</b></a></p>
                     </div>
                     <ul class="list-unstyled ms-md-4">
                         <li>
@@ -59,84 +59,67 @@
                         </li>
                     </ul>
                 </div>
-                <ul class="navbar-nav text-uppercase mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About us</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Services
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a class="dropdown-item" href="service-3.html">
-                                    demo1
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="service-3.html">
-                                    demo1
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="service-3.html">
-                                    demo1
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Gallery</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Our Projects
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a class="dropdown-item" href="service-3.html">
-                                    demo1
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="service-3.html">
-                                    demo1
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="service-3.html">
-                                    demo1
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Fleets</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact us</a>
-                    </li>
-                    <li class="nav-item">
-                        <button class="theme-btn text-uppercase">Request a quote</button>
-                    </li>
-                </ul>
+                <div class="row w-100 border-top py-2 align-content-center">
+                    <ul class="navbar-nav text-uppercase col-lg-9 justify-content-evenly    ">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about-us.html">About us</a>
+                        </li>
+                         <li class="nav-item">
+                            <a href="#" class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Gallery</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Our Projects
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="service-3.html">
+                                        demo1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="service-3.html">
+                                        demo1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="service-3.html">
+                                        demo1
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Fleets</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact us</a>
+                        </li>
+                    </ul>
+                    <div class="col-lg-3">
+
+                        <button class="theme-btn text-uppercase  my-2">Request a quote</button>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
 
-    <header class="mt-5 pt-5">
+    <header class="">
         <div id="carouselExampleCaptions" class="carousel slide">
             <div class="carousel-inner ">
                 <div class="carousel-item  active">
                     <img src="./assets/slider/image-1.png" class="d-block w-100" alt="...">
                     <div class="carousel-caption  text-start d-none col-lg-4  d-md-block">
                         <h5 class="display-3 ">Special transportation Service</h5>
-                        <button class="btn btn-outline-light rounded-0 py-2 px-5 fs-5 mt-4">
+                        <button class="btn btn-outline-light rounded-0 py-2 px-4 fs-5 mt-4">
                             Know More
                              <i class="fa-solid fa-arrow-right-long ms-3 "></i> 
                         </button>
@@ -146,7 +129,7 @@
                     <img src="./assets/slider/image-1.png" class="d-block w-100" alt="...">
                     <div class="carousel-caption  text-start d-none col-lg-4  d-md-block">
                         <h5 class="display-3 ">Special transportation Service</h5>
-                        <button class="btn btn-outline-light rounded-0 py-2 px-5 fs-5 mt-4">
+                        <button class="btn btn-outline-light rounded-0 py-2 px-4 fs-5 mt-4">
                             Know More
                             <i class="fa-solid fa-arrow-right-long ms-3 "></i>
                         </button>
@@ -156,7 +139,7 @@
                     <img src="./assets/slider/image-1.png" class="d-block w-100" alt="...">
                     <div class="carousel-caption  text-start d-none col-lg-4  d-md-block">
                         <h5 class="display-3 ">Special transportation Service</h5>
-                        <button class="btn btn-outline-light rounded-0 py-2 px-5 fs-5 mt-4 ">
+                        <button class="btn btn-outline-light rounded-0 py-2 px-4 fs-5 mt-4 ">
                             Know More 
                             <i class="fa-solid fa-arrow-right-long ms-3 "></i>
                         </button>
@@ -372,31 +355,31 @@
     <footer class="bg-primary-light text-white">
         <div class="container">
             <div class="row">
-                <div class="col-lg-7">
+                <div class="col-lg-6">
                     <div class="row">
                         <div class="col-md-3">
-                            <img src="./assets/logo.png" class="border-end my-3 my-md-5 p-3 d-block mx-auto" alt="">
+                            <img src="./assets/logo2.png" class="border-end logo my-3 my-md-5 p-3 d-block mx-auto" alt="">
                         </div>
                         <div class="col-md-9">
-                            <p class="p-3 p-md-5 fs-4">
+                            <p class="p-3 p-md-5 fs-5 ">
                                 We own and lend a range equipment’s including Heavy-duty Cranes, Piling Rigs, Trailers,
                                 Hydraulic Axles, Man Lifts etc.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-lg-6">
                     <div class="row py-4 py-md-5 fs-5">
                         <div class="col-md-6">
-                            <p> <i class="fa-solid fa-arrow-right-long me-2 "></i> Truck Mounted</p>
-                            <p><i class="fa-solid fa-arrow-right-long me-2 "></i> Crawler Crane</p>
-                            <p><i class="fa-solid fa-arrow-right-long me-2 "></i> Terrain Crane</p>
-                            <p><i class="fa-solid fa-arrow-right-long me-2 "></i> Truck Mounted Telescopic</p>
+                            <p> <i class="fa-solid fa-arrow-right-long me-3 "></i> Truck Mounted</p>
+                            <p><i class="fa-solid fa-arrow-right-long me-3 "></i> Crawler Crane</p>
+                            <p><i class="fa-solid fa-arrow-right-long me-3 "></i> Terrain Crane</p>
+                            <p><i class="fa-solid fa-arrow-right-long me-3 "></i> Truck Mounted Telescopic</p>
                         </div>
                         <div class="col-md-6">
-                            <p><i class="fa-solid fa-arrow-right-long me-2 "></i> Pilling Rigs</p>
-                            <p><i class="fa-solid fa-arrow-right-long me-2 "></i> Puller + 12 Tratec Axels</p>
-                            <p><i class="fa-solid fa-arrow-right-long me-2 "></i> Trailor - 16 wheeler</p>
+                            <p><i class="fa-solid fa-arrow-right-long me-3 "></i> Pilling Rigs</p>
+                            <p><i class="fa-solid fa-arrow-right-long me-3 "></i> Puller + 12 Tratec Axels</p>
+                            <p><i class="fa-solid fa-arrow-right-long me-3 "></i> Trailor - 16 wheeler</p>
                         </div>
                     </div>
                 </div>
@@ -404,10 +387,10 @@
         </div>
     </footer>
 
-    <footer class="bg-primary-dark contact text-white">
+    <footer class="bg-black contact text-white">
         <div class="container pt-5 pt-md-3">
             <div class="d-flex flex-wrap justify-content-between">
-                <div class="d-flex align-items-center">
+                <div class="d-flex align-items-center ">
                     <i class="fa-solid fa-envelope"></i>
                     <div>
                         <p class="m-0 fs-5">EMAIL US</p>
@@ -423,12 +406,12 @@
                 </div>
                 <div class="d-flex flex-wrap col-lg-4  align-items-center">
                     <i class="fa-solid fa-location-dot"></i>
-                    <p class="col-8 col-md-7  py-3 fs-5">Chacha House, Opp. Bezzola Complex , Near Suman Nagar, Sion
+                    <p class="col-8 col-md-7  py-3 fs-6">Chacha House, Opp. Bezzola Complex , Near Suman Nagar, Sion
                         Trombay Road, Chembur, Mumbai-400 071.</p>
                 </div>
             </div>
         </div>
-        <hr>
+        <hr >
         <div class="container d-flex flex-wrap justify-content-between">
             <p>Copyright © 2024 Amrik All Rights Reserved</p>
             <p> <img src="./assets/innovative.png" alt=""> <a href="" class="text-decoration-none text-white">Innovative Web Solutions</a> All Rights Reserved</p>

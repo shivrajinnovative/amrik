@@ -52,15 +52,15 @@
         });
 
         
-        $(document).ready(function () {
-            var lastScrollTop = 0;
-            $(window).scroll(function (event) {
-                var st = $(this).scrollTop();
-                if (st > lastScrollTop) {
-                    $('.navbar').css('top', '-160px');
-                } else {
-                    $('.navbar').css('top', '0');
-                }
-                lastScrollTop = st;
-            });
-        });
+        // $(document).ready(function () {
+        //     var lastScrollTop = 0;
+        //     $(window).scroll(function (event) {
+        //         var st = $(this).scrollTop();
+        //         if (st > lastScrollTop) {
+        //             $('.navbar').css('top', '-60px');
+        //         } else {
+        //             $('.navbar').css('top', '0');
+        //         }
+        //         lastScrollTop = st;
+        //     });
+        // });
