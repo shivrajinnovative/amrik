@@ -290,31 +290,21 @@ section.gallery{
 }
 
 
-
-footer.contact i{
-    font-size: 40px;
-    margin: 20px;
-    height: 80px;
-    width: 80px;
-    line-height: 80px;
+footer .contact i{
+    font-size: 20px;
+    margin-right: 20px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
     text-align: center;
     color: white;
-    border: 2px dashed #ED7F36;
+    border: 2px dashed white;
     border-radius:50%;
     transition:all 0.3s;
 }
-hr{
-    border-color: #E1630F;
-    border-width: 2px;
-}
 
-footer.contact i:hover{
-    border: 2px dashed var(--primary-color);
-    background-color: white;
-    color: var(--primary-color);
-}
 @media(max-width:768px){
-    footer.contact i{
+    footer .contact i{
         font-size: 20px;
         margin: 20px;
         height: 40px;
@@ -353,4 +343,47 @@ header.header{
 .aboutImg::after{
     right: -20px;
     top: -20px;
+}
+
+.contactPage div{
+    margin-bottom: 30px;
+}
+.contactPage input,.contactPage textarea{
+    width: 100%;
+    padding: 10px 20px;
+}
+.contactPage{
+    background: url("./assets/bg/contact.png");
+    background-size: 60% 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+@media (width<=768px){
+    .contactPage{
+        background-size: 100%;
+        }
+}
+
+
+/* ///////////////////////////////// project ///////////////////////////////////// */
+.projectNav .active{
+border-bottom: 3px solid #E1630F;
+}
+
+.projectCard{
+    height: 500px;
+}
+
+.projectCard .inner{
+    transition: all .5s;
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    bottom: 20px;
+    height: 60px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.766);
+}
+.projectCard:hover .inner{
+    height: auto;
 }
