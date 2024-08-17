@@ -169,6 +169,7 @@ footer .logo{
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active{
     color: var(--primary-color);
+    font-weight: 600;
 }
 @media (max-width:768px){
     .logo{
@@ -373,9 +374,11 @@ border-bottom: 3px solid #E1630F;
 .projectCard{
     height: 500px;
 }
-
+.projectCard img{
+    height: 100%;
+}
 .projectCard .inner{
-    transition: all .5s;
+    transition: all 1s;
     position: absolute;
     width: 80%;
     left: 10%;
