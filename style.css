@@ -372,7 +372,8 @@ border-bottom: 3px solid #E1630F;
 }
 
 .projectCard{
-    height: 500px;
+    height: 400px;
+    cursor: pointer;
 }
 .projectCard img{
     height: 100%;
@@ -383,10 +384,29 @@ border-bottom: 3px solid #E1630F;
     width: 80%;
     left: 10%;
     bottom: 20px;
-    height: 60px;
+    height: 55px;
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.766);
 }
 .projectCard:hover .inner{
-    height: auto;
+    height: 300px;
+}
+
+@media (width<=500px){
+    
+    .projectCard{
+        height: 400px;
+    }
+
+    .projectCard .inner{
+        position: absolute;
+        width: 90%;
+        left: 5%;
+        bottom: 20px;
+        height: 350px;
+        overflow: scroll;
+        background-color: rgba(0, 0, 0, 0.581);
+
+    }
+    
 }

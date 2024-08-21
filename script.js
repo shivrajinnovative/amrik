@@ -66,20 +66,6 @@
     // });
 
 
-    // let str="a3c2n4b10v2"
-    // let result=""
-    // for(let i=0;i<str.length;i++){
-    //     let char=str[i]
-    //     let number=""
-    //     while(!isNaN(str[i+1])){
-    //         number+=str[i+1]
-    //         i++
-    //     }
-    //     result+=char.repeat(number)
-    // }
-    // console.log(result)
-
-
 
 
 
